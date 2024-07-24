@@ -1,0 +1,38 @@
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-image: url('famille.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .card {
+            width: 18rem;
+            margin: 1rem;
+            border-radius: 15px;
+        }
+        .card .card-body {
+            text-align: center;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .btn-vote {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem auto 0;
+            padding: 0.75rem 1.25rem;
+            font-size: 1.25rem;
+            border-radius: 25px;
+        }
+   

@@ -1,8 +1,8 @@
 <?php
 $host = 'postgres';
 $db = 'votes';
-$user = 'root';
-$pass = 'root';
+$user = 'user';
+$pass = 'password';
 $dsn = "pgsql:host=$host;dbname=$db";
 $pdo = new PDO($dsn, $user, $pass);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -11,3 +11,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute(['choice' => $vote]);
     echo 'Merci pour votre vote !';
 }
+?>
