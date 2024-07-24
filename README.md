@@ -12,8 +12,8 @@ Cette application permet aux utilisateurs de voter pour la monogamie ou la polyg
 1. Clonez le dépôt :
 
    ```sh
-   git clone https://github.com/masrane1/vote-app.git
-   cd appli-vote
+   git clone https://github.com/masrane1/vote_App.git
+   cd vote_App
    ```
 
 2. Lancez Docker Compose :
