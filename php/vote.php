@@ -1,8 +1,8 @@
 <?php
 $host = 'postgres';
 $db = 'votes';
-$user = 'user';
-$pass = 'password';
+$user = 'root';
+$pass = 'root';
 $dsn = "pgsql:host=$host;dbname=$db";
 $pdo = new PDO($dsn, $user, $pass);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
