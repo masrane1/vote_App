@@ -1,7 +1,20 @@
+# Utiliser une image Node.js officielle
 FROM node:14
+
+# Créer un répertoire de travail
 WORKDIR /usr/src/app
+
+# Copier package.json et package-lock.json
 COPY package*.json ./
+
+# Installer les dépendances
 RUN npm install
+
+# Copier le reste des fichiers de l'application
 COPY . .
+
+# Exposer le port de l'application
 EXPOSE 3001
-CMD [ "node", "results.js" ]
+
+# Démarrer l'application
+CMD ["node", "results.js"]
